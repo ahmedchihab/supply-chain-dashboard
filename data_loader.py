@@ -1,7 +1,8 @@
 import pandas as pd
 
 # 🔹 Charger le CSV brut
-file_path = r"C:\Users\Galaxy\Downloads\DataCoSupplyChainDataset_clean.csv"
+file_path = r"https://drive.google.com/uc?export=download&id=1fZlS4aDC5i7dqFvihM_ap7yfNcuqzDWP"
+
 df = pd.read_csv(file_path)
 
 # ================================
@@ -59,3 +60,4 @@ output_path = r"C:\Users\Galaxy\Downloads\DataCoSupplyChainDataset_clean_ready.c
 df.to_csv(output_path, index=False)
 
 print(f"✅ Fichier nettoyé et sauvegardé ici : {output_path}")
+
