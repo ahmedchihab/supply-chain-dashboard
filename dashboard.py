@@ -12,7 +12,8 @@ st.set_page_config(page_title="Ultra Dashboard Supply Chain", layout="wide", pag
 # ================================
 # 🔹 Charger les données
 # ================================
-DATA_PATH = r"C:\Users\Galaxy\Downloads\DataCoSupplyChainDataset_clean_ready.csv"
+DATA_PATH = r"https://drive.google.com/uc?export=download&id=1fZlS4aDC5i7dqFvihM_ap7yfNcuqzDWP"
+
 df = pd.read_csv(DATA_PATH)
 
 # Convertir les dates
@@ -188,3 +189,4 @@ elif page == "Insights":
     fig_profit = px.bar(profit_products, x='Order Item Profit Ratio', y='Product Name', orientation='h',
                         color='Order Item Profit Ratio', text_auto=True, title="💵 Top Profits Produits")
     st.plotly_chart(fig_profit, use_container_width=True)
+
